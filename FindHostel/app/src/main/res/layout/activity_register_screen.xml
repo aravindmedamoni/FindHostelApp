@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="2dp"
+    android:background="#ffffff"
+    tools:context=".RegisterScreen">
+    <!--android:background="#e2dee0"-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/venture"/>
+
+        <EditText
+            android:id="@+id/rg_user"
+            android:layout_marginLeft="1dp"
+            android:drawableLeft="@drawable/user"
+            android:singleLine="true"
+            android:paddingLeft="4dp"
+            android:inputType="text"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edshape"
+            android:fontFamily="serif"
+            android:hint="User Name"
+            android:layout_width="355dp"
+            android:layout_height="50dp" />
+
+    <EditText
+        android:layout_below="@id/rg_user"
+        android:id="@+id/rg_mail"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="1dp"
+        android:drawableLeft="@drawable/mail"
+        android:paddingLeft="4dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edshape"
+        android:fontFamily="serif"
+        android:hint="E_mail"
+        android:layout_width="355dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/rg_number"
+        android:layout_below="@id/rg_mail"
+        android:singleLine="true"
+        android:inputType="number"
+        android:layout_marginLeft="1dp"
+        android:drawableLeft="@drawable/mobile"
+        android:paddingLeft="4dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edshape"
+        android:fontFamily="serif"
+        android:hint="Mobile Number"
+        android:layout_width="355dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/rg_pswd"
+        android:layout_below="@id/rg_number"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:fontFamily="serif"
+        android:layout_marginLeft="1dp"
+        android:drawableLeft="@drawable/pswd"
+        android:paddingLeft="4dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edshape"
+        android:hint="Password"
+        android:layout_width="355dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/rg_ll"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/rg_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            android:text="Register"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rg_ll"
+        android:src="@drawable/tranferent"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="65dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
